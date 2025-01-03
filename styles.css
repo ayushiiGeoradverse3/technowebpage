@@ -149,6 +149,9 @@ section:hover {
     gap: 20px;
 }
 
+.magazine-issues a{
+    text-decoration: none;
+}
 .magazine-issues button {
     background: white;
     color: black;
@@ -349,6 +352,9 @@ section:hover {
 
     .tech-talks img {
         width: 100%;
+    }
+    .social-icons{
+        flex-wrap: wrap;
     }
 }
 .container {
