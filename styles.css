@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url("webpage\ images/techno1/3.png");
+    background: url("webpage images/techno1/3.png"), var(--background-gradient);
     margin: 0;
     padding: 20px;
     color: var(--text-color);
@@ -60,6 +60,7 @@ h2 {
     font-size: 2.6em;
     margin: 10px 0;
     color: var(--heading-color);
+    font-family: "Electrolize", sans-serif;
 }
 
 .hh {
@@ -85,6 +86,7 @@ h2 {
     color: var(--heading-color);
     transition: color 0.3s ease, transform 0.2s;
     font-size: 2em;
+    font-family: "Electrolize", sans-serif;
 }
 
 #navbar li a:hover {
@@ -115,7 +117,7 @@ main {
 section {
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px var(#000000);
+    box-shadow: 0 0 10px var(--shadow-color);
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
     transition: background 0.3s;
@@ -142,16 +144,17 @@ section:hover {
     height: auto;
     object-fit: cover;
 }
-
 .magazine-issues {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 20px; /* Space between grid items */
 }
 
-.magazine-issues a{
+.magazine-issues a {
     text-decoration: none;
 }
+
 .magazine-issues button {
     background: white;
     color: black;
@@ -162,6 +165,7 @@ section:hover {
     transition: all 0.3s ease;
     box-shadow: 0px 4px 4px var(--shadow-color);
     padding: 10px 20px;
+    font-family: "Electrolize", sans-serif;
 }
 
 .magazine-issues button:hover {
@@ -213,6 +217,7 @@ section:hover {
     text-decoration: none;
     display: block;
     transition: background-color 0.3s;
+    font-family: "Electrolize", sans-serif; /* Added */
 }
 
 .dropdown-content a:hover {
@@ -319,6 +324,7 @@ section:hover {
     margin-top: 10px;
     font-weight: bold;
     color: #B7B597;
+    font-family: "Electrolize", sans-serif; /* Added */
 }
 
 .grid {
@@ -329,6 +335,7 @@ section:hover {
     max-width: 900px;
     margin: 20px 0;
 }
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5em;
@@ -353,10 +360,12 @@ section:hover {
     .tech-talks img {
         width: 100%;
     }
-    .social-icons{
+
+    .social-icons {
         flex-wrap: wrap;
     }
 }
+
 .container {
     max-width: 100%;
     overflow: hidden;
